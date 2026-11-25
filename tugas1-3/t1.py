@@ -3,7 +3,7 @@ from tree_sitter import Language, Parser
 
 parser = Parser(Language(tspython.language()))
 
-kode = b"def sapa(nama)\n    return nama\n"
+kode = b"def sapa(nama):\n    return nama\n"
 
 tree = parser.parse(kode)
 print(kode.decode())
