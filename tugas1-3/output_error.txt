@@ -1,0 +1,9 @@
+def sapa(nama)
+    return nama
+
+(module (ERROR (identifier) (parameters (identifier)) (identifier)))
+def anonim
+identifier bernama
+parameters bernama
+return anonim
+identifier bernama

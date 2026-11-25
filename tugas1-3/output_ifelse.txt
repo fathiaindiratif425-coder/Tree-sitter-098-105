@@ -1,0 +1,6 @@
+if x > 2:
+    print(x)
+else:
+    print(0)
+
+(module (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (expression_statement (call function: (identifier) arguments: (argument_list (identifier))))) alternative: (else_clause body: (block (expression_statement (call function: (identifier) arguments: (argument_list (integer))))))))
