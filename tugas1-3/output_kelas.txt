@@ -1,0 +1,5 @@
+class Hewan:
+    def bunyi(self):
+        return 1
+
+(module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (integer)))))))

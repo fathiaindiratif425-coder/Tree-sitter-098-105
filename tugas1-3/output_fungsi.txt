@@ -1,0 +1,4 @@
+def sapa(nama):
+    return nama
+
+(module (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (identifier)))))
