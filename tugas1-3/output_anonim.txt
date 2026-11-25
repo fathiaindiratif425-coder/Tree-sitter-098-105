@@ -1,0 +1,11 @@
+def sapa(nama)
+    return nama
+
+(module (ERROR (identifier) (parameters (identifier)) (identifier)))
+--- anak fungsi_definition ---
+def anonim
+identifier bernama
+parameters bernama
+return anonim
+identifier bernama
+--- anak parameters ---
