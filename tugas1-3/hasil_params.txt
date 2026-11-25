@@ -1,0 +1,3 @@
+tambah 2
+kali 3
+halo 0
