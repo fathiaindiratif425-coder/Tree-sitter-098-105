@@ -1,0 +1,10 @@
+BARIS KOL  ATURAN PESAN
+52    34   R3     TypeError: argumen '"0.11"' bertipe str, parameter 'tax_rate' butuh float
+58    15   R2     PERINGATAN: 'order.id' - tipe 'order' tidak diketahui dan 'id' bukan atribut class mana pun
+73    26   R1     NameError: nama 'order_status' tidak didefinisikan di fungsi 'generate_report'
+83    33   R2     PERINGATAN: 'product.quantity' - tipe 'product' tidak diketahui dan 'quantity' bukan atribut class mana pun
+86    8    R6     variabel 'total' awalnya int lalu jadi float (type inconsistency)
+88    4    R5     return bertipe str, tetapi 'calculate_bulk_price' dideklarasikan -> float
+88    11   R4     TypeError: operator + antara str dan float
+
+Total temuan: 7
