@@ -1,0 +1,13 @@
+(query [0, 0] - [1, 0]
+  (and_expression [0, 0] - [0, 52]
+    left: (comparison [0, 0] - [0, 15]
+      field: (identifier [0, 0] - [0, 6])
+      value: (string [0, 9] - [0, 15]))
+    right: (parenthesized [0, 20] - [0, 52]
+      (or_expression [0, 21] - [0, 51]
+        left: (comparison [0, 21] - [0, 33]
+          field: (identifier [0, 21] - [0, 29])
+          value: (number [0, 32] - [0, 33]))
+        right: (comparison [0, 37] - [0, 51]
+          field: (identifier [0, 37] - [0, 42])
+          value: (string [0, 45] - [0, 51]))))))

@@ -1,0 +1,207 @@
+==================
+perbandingan string
+==================
+
+status != "closed"
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (string)))
+
+==================
+perbandingan angka
+==================
+
+priority >= 2
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (number)))
+
+==================
+angka desimal satu token
+==================
+
+harga < 10.5
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (number)))
+
+==================
+and sederhana
+==================
+
+a = 1 and b = 2
+
+---
+
+(query
+  (and_expression
+    (comparison
+      (identifier)
+      (number))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+and berantai mengelompok ke kiri
+==================
+
+a = 1 and b = 2 and c = 3
+
+---
+
+(query
+  (and_expression
+    (and_expression
+      (comparison
+        (identifier)
+        (number))
+      (comparison
+        (identifier)
+        (number)))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+and lebih kuat dari or
+==================
+
+a = 1 or b = 2 and c = 3
+
+---
+
+(query
+  (or_expression
+    (comparison
+      (identifier)
+      (number))
+    (and_expression
+      (comparison
+        (identifier)
+        (number))
+      (comparison
+        (identifier)
+        (number)))))
+
+==================
+and di kiri, or di kanan
+==================
+
+a = 1 and b = 2 or c = 3
+
+---
+
+(query
+  (or_expression
+    (and_expression
+      (comparison
+        (identifier)
+        (number))
+      (comparison
+        (identifier)
+        (number)))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+kurung mengubah prioritas, kiri
+==================
+
+(a = 1 or b = 2) and c = 3
+
+---
+
+(query
+  (and_expression
+    (parenthesized
+      (or_expression
+        (comparison
+          (identifier)
+          (number))
+        (comparison
+          (identifier)
+          (number))))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+kurung di sisi kanan
+==================
+
+a = 1 and (b = 2 or c = 3)
+
+---
+
+(query
+  (and_expression
+    (comparison
+      (identifier)
+      (number))
+    (parenthesized
+      (or_expression
+        (comparison
+          (identifier)
+          (number))
+        (comparison
+          (identifier)
+          (number))))))
+
+==================
+not dengan boolean true
+==================
+
+not archived = true
+
+---
+
+(query
+  (not_expression
+    (comparison
+      (identifier)
+      (boolean))))
+
+==================
+not lebih kuat dari and
+==================
+
+not a = 1 and b = 2
+
+---
+
+(query
+  (and_expression
+    (not_expression
+      (comparison
+        (identifier)
+        (number)))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+boolean false
+==================
+
+done = false
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (boolean)))
