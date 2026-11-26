@@ -1,0 +1,179 @@
+
+=== def __init__ ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'product_id'
+    :  ':'
+    type: type
+      identifier  'int'
+  ,  ','
+  typed_parameter
+    identifier  'name'
+    :  ':'
+    type: type
+      identifier  'str'
+  ,  ','
+  typed_parameter
+    identifier  'price'
+    :  ':'
+    type: type
+      identifier  'float'
+  )  ')'
+
+=== def __init__ ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'customer'
+    :  ':'
+    type: type
+      identifier  'str'
+  )  ')'
+
+=== def add_item ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'product'
+    :  ':'
+    type: type
+      identifier  'Product'
+  ,  ','
+  typed_parameter
+    identifier  'quantity'
+    :  ':'
+    type: type
+      identifier  'int'
+  )  ')'
+
+=== def apply_discount ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'percentage'
+    :  ':'
+    type: type
+      identifier  'float'
+  )  ')'
+
+=== def calculate_tax ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'tax_rate'
+    :  ':'
+    type: type
+      identifier  'float'
+  )  ')'
+
+=== def __init__ ===
+parameters
+  (  '('
+  identifier  'self'
+  )  ')'
+
+=== def create_order ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'customer'
+    :  ':'
+    type: type
+      identifier  'str'
+  )  ')'
+
+=== def process_order ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'order'
+    :  ':'
+    type: type
+      identifier  'Order'
+  ,  ','
+  typed_parameter
+    identifier  'discount'
+    :  ':'
+    type: type
+      identifier  'float'
+  )  ')'
+
+=== def find_order ===
+parameters
+  (  '('
+  identifier  'self'
+  ,  ','
+  typed_parameter
+    identifier  'order_id'
+    :  ':'
+    type: type
+      identifier  'int'
+  )  ')'
+
+=== def generate_report ===
+parameters
+  (  '('
+  identifier  'self'
+  )  ')'
+
+=== def calculate_bulk_price ===
+parameters
+  (  '('
+  typed_parameter
+    identifier  'products'
+    :  ':'
+    type: type
+      identifier  'list'
+  ,  ','
+  typed_parameter
+    identifier  'discount'
+    :  ':'
+    type: type
+      identifier  'float'
+  )  ')'
+
+=== def main ===
+parameters
+  (  '('
+  )  ')'
+
+=== pemanggilan Product(...) baris 94 ===
+argument_list
+  (  '('
+  integer  '101'
+  ,  ','
+  string
+    string_start  '"'
+    string_content  'Laptop'
+    string_end  '"'
+  ,  ','
+  integer  '7500000'
+  )  ')'
+
+=== pemanggilan Product(...) baris 95 ===
+argument_list
+  (  '('
+  integer  '102'
+  ,  ','
+  string
+    string_start  '"'
+    string_content  'Mouse'
+    string_end  '"'
+  ,  ','
+  integer  '150000'
+  )  ')'
