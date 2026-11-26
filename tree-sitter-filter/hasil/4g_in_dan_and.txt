@@ -1,0 +1,9 @@
+(query [0, 0] - [1, 0]
+  (and_expression [0, 0] - [0, 37]
+    left: (in_expression [0, 0] - [0, 18]
+      field: (identifier [0, 0] - [0, 8])
+      value: (number [0, 13] - [0, 14])
+      value: (number [0, 16] - [0, 17]))
+    right: (comparison [0, 23] - [0, 37]
+      field: (identifier [0, 23] - [0, 28])
+      value: (string [0, 31] - [0, 37]))))

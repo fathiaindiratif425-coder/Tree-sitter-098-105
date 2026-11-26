@@ -1,0 +1,6 @@
+(query [0, 0] - [1, 0]
+  (in_expression [0, 0] - [0, 39]
+    field: (identifier [0, 0] - [0, 6])
+    value: (string [0, 11] - [0, 17])
+    value: (string [0, 19] - [0, 28])
+    value: (string [0, 30] - [0, 38])))

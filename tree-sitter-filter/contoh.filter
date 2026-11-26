@@ -1,1 +1,1 @@
-status = "open" and (priority > 2 or owner = "budi")
+title contains "invoice"

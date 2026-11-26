@@ -205,3 +205,49 @@ done = false
   (comparison
     field: (identifier)
     value: (boolean)))
+
+==================
+in dengan tiga nilai
+==================
+
+status in ("open", "pending", "closed")
+
+---
+
+(query
+  (in_expression
+    field: (identifier)
+    value: (string)
+    value: (string)
+    value: (string)))
+
+==================
+in digabung dengan and
+==================
+
+priority in (1, 2) and owner = "budi"
+
+---
+
+(query
+  (and_expression
+    left: (in_expression
+      field: (identifier)
+      value: (number)
+      value: (number))
+    right: (comparison
+      field: (identifier)
+      value: (string))))
+
+==================
+contains untuk pencarian teks
+==================
+
+title contains "invoice"
+
+---
+
+(query
+  (contains_expression
+    field: (identifier)
+    value: (string)))

@@ -1,0 +1,4 @@
+(query [0, 0] - [1, 0]
+  (contains_expression [0, 0] - [0, 24]
+    field: (identifier [0, 0] - [0, 5])
+    value: (string [0, 15] - [0, 24])))
