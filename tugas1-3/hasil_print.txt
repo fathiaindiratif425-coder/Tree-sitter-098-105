@@ -1,0 +1,4 @@
+@fn  baris 9: print
+@fn  baris 13: print
+@args  baris 9: (a, b)
+@args  baris 13: ("halo")
