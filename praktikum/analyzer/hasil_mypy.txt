@@ -1,0 +1,5 @@
+praktikum/order_app.py:11: error: Need type annotation for "items" (hint: "items: list[<type>] = ...")  [var-annotated]
+praktikum/order_app.py:52: error: Argument 1 to "calculate_tax" of "Order" has incompatible type "str"; expected "float"  [arg-type]
+praktikum/order_app.py:86: error: Incompatible types in assignment (expression has type "float", variable has type "int")  [assignment]
+praktikum/order_app.py:88: error: Unsupported operand types for + ("str" and "int")  [operator]
+Found 4 errors in 1 file (checked 1 source file)
