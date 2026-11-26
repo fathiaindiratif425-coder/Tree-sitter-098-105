@@ -1,0 +1,17 @@
+[31mError:[0m Error when generating parser
+
+Caused by:
+    Unresolved conflict for symbol sequence:
+    
+      _expr  'or'  _expr  •  'or'  …
+    
+    Possible interpretations:
+    
+      1:  (or_expression  _expr  'or'  _expr)  •  'or'  …
+      2:  _expr  'or'  (or_expression  _expr  •  'or'  _expr)
+    
+    Possible resolutions:
+    
+      1:  Specify a left or right associativity in `or_expression`
+      2:  Add a conflict for these rules: `or_expression`
+    
