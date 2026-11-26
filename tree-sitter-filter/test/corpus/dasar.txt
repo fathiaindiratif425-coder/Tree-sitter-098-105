@@ -1,0 +1,38 @@
+==================
+perbandingan string
+==================
+
+status != "closed"
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (string)))
+
+==================
+perbandingan angka
+==================
+
+priority >= 2
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (number)))
+
+==================
+angka desimal satu token
+==================
+
+harga < 10.5
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (number)))

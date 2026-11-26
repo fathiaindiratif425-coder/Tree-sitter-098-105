@@ -1,0 +1,4 @@
+(query [0, 0] - [1, 0]
+  (comparison [0, 0] - [0, 18]
+    (identifier [0, 0] - [0, 6])
+    (string [0, 10] - [0, 18])))
