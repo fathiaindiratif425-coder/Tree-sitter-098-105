@@ -36,3 +36,41 @@ harga < 10.5
   (comparison
     (identifier)
     (number)))
+
+==================
+and sederhana
+==================
+
+a = 1 and b = 2
+
+---
+
+(query
+  (and_expression
+    (comparison
+      (identifier)
+      (number))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+and berantai mengelompok ke kiri
+==================
+
+a = 1 and b = 2 and c = 3
+
+---
+
+(query
+  (and_expression
+    (and_expression
+      (comparison
+        (identifier)
+        (number))
+      (comparison
+        (identifier)
+        (number)))
+    (comparison
+      (identifier)
+      (number))))
