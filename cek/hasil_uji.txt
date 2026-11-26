@@ -1,0 +1,6 @@
+uji/panjang.py:1: FUNGSI PANJANG: panjang (37 baris)
+uji/rusak.py:1: ERROR SINTAKS
+uji/todo.py:1: TODO: # TODO: tambah validasi
+uji/todo.py:3: TODO: # FIXME: ini sementara
+
+Selesai: 3 file diperiksa.

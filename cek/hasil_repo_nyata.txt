@@ -1,0 +1,9 @@
+/home/bunga/repo-uji/src/itsdangerous/serializer.py:190: FUNGSI PANJANG: __init__ (45 baris)
+/home/bunga/repo-uji/src/itsdangerous/signer.py:129: FUNGSI PANJANG: __init__ (45 baris)
+/home/bunga/repo-uji/src/itsdangerous/signer.py:182: FUNGSI PANJANG: derive_key (32 baris)
+/home/bunga/repo-uji/src/itsdangerous/timed.py:182: TODO: # TODO: Signature is incompatible because parameters were added
+/home/bunga/repo-uji/src/itsdangerous/timed.py:72: FUNGSI PANJANG: unsign (87 baris)
+/home/bunga/repo-uji/src/itsdangerous/timed.py:185: FUNGSI PANJANG: loads (36 baris)
+/home/bunga/repo-uji/src/itsdangerous/url_safe.py:23: FUNGSI PANJANG: load_payload (31 baris)
+
+Selesai: 15 file diperiksa.
