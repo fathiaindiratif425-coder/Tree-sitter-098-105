@@ -1,0 +1,13 @@
+(query [0, 0] - [1, 0]
+  (and_expression [0, 0] - [0, 26]
+    (parenthesized [0, 0] - [0, 16]
+      (or_expression [0, 1] - [0, 15]
+        (comparison [0, 1] - [0, 6]
+          (identifier [0, 1] - [0, 2])
+          (number [0, 5] - [0, 6]))
+        (comparison [0, 10] - [0, 15]
+          (identifier [0, 10] - [0, 11])
+          (number [0, 14] - [0, 15]))))
+    (comparison [0, 21] - [0, 26]
+      (identifier [0, 21] - [0, 22])
+      (number [0, 25] - [0, 26]))))
