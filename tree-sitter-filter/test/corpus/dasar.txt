@@ -160,3 +160,48 @@ a = 1 and (b = 2 or c = 3)
         (comparison
           (identifier)
           (number))))))
+
+==================
+not dengan boolean true
+==================
+
+not archived = true
+
+---
+
+(query
+  (not_expression
+    (comparison
+      (identifier)
+      (boolean))))
+
+==================
+not lebih kuat dari and
+==================
+
+not a = 1 and b = 2
+
+---
+
+(query
+  (and_expression
+    (not_expression
+      (comparison
+        (identifier)
+        (number)))
+    (comparison
+      (identifier)
+      (number))))
+
+==================
+boolean false
+==================
+
+done = false
+
+---
+
+(query
+  (comparison
+    (identifier)
+    (boolean)))

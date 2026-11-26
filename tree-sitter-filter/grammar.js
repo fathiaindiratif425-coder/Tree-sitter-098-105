@@ -10,6 +10,7 @@ export default grammar({
       $.comparison,
       $.and_expression,
       $.or_expression,
+      $.not_expression,
       $.parenthesized,
     ),
 
@@ -21,9 +22,11 @@ export default grammar({
 
     or_expression: $ => prec.left(1, seq($._expr, 'or', $._expr)),
     and_expression: $ => prec.left(2, seq($._expr, 'and', $._expr)),
+    not_expression: $ => prec(3, seq('not', $._expr)),
     parenthesized: $ => seq('(', $._expr, ')'),
 
-    _value: $ => choice($.string, $.number),
+    _value: $ => choice($.string, $.number, $.boolean),
+    boolean: $ => choice('true', 'false'),
     identifier: $ => /[a-zA-Z_][a-zA-Z0-9_.]*/,
     string: $ => /"[^"]*"/,
     number: $ => /\d+(\.\d+)?/,
